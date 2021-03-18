@@ -364,6 +364,13 @@ footer .footer-under {
   }
 }
 
+@media (min-width: 1400px) {
+  .top-fv p.circle {
+    width: 40%;
+    top: -20%;
+  }
+}
+
 .top-fv p.circle img {
   width: 100%;
 }
@@ -389,6 +396,13 @@ footer .footer-under {
   }
 }
 
+@media (min-width: 1400px) {
+  .top-fv p.picture {
+    width: 25%;
+    right: 18%;
+  }
+}
+
 .top-fv p.picture img {
   width: 100%;
 }
@@ -404,6 +418,12 @@ footer .footer-under {
   .top-fv .top-text {
     top: 25%;
     left: 5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top-fv .top-text {
+    left: 20%;
   }
 }
 
