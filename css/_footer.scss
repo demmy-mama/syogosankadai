@@ -1,0 +1,53 @@
+footer {
+    background-color: #F8F8F8;
+    text-align: center;
+
+    .logo {
+        font-size: 24px;
+        padding: 50px 0 30px;
+
+        @include sp {
+            font-size: 20px;
+            padding: 30px 0 20px;
+        }
+    }
+
+    .footer {
+        margin-bottom: 59px;
+        display: flex;
+        justify-content: center;
+
+        @include sp {
+            margin-bottom: 30px;
+        }
+        
+        .footer01 {
+            padding-right: 15px;
+            font-size: 16px;
+
+            @include sp {
+                font-size: 12px;
+            }
+        }
+    
+        .footer02 {
+            font-size: 16px;
+            padding-left: 15px;
+            @include sp {
+                font-size: 12px;
+            }
+        }
+    
+    }
+
+    .footer-under {
+        font-size: 14px;
+        padding-bottom: 50px;
+        font-weight: normal;
+
+        @include sp {
+            font-size: 10px;
+            padding-bottom: 20px;
+        }
+    }
+}

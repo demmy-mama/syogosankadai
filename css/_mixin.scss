@@ -1,0 +1,59 @@
+@import "common";
+
+// フォントサイズ
+@mixin fz($size: 14) {
+	font-size: $size + px;
+	font-size: ($size / 10)  + rem;
+}
+// 行の高さ
+@mixin line-height( $psd-size , $font-size ) {
+    　line-height: $psd-size / $font-size;
+    }
+// 文字間
+@mixin letter-spacing( $trakking ) {
+  　letter-spacing: $trakking / 1000 + em;
+    }
+
+// お問い合わせボタン
+@mixin c-btn {
+    width: 155px;
+    font-size: 14px;
+    padding: 12px 0;
+    background: $cBTN01;
+    background: $cBTN02;
+    border-radius: 10px;
+    color: $cWhite;
+    text-align: center;
+}
+
+// section見出し
+@mixin h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 19px;  
+}
+
+@mixin h2-sub {
+    font-size: 16px;
+    color: $cSub;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin shadow {
+    box-shadow: 0 0 10 $cShadow;
+}
+
+$tab: 1039px; // タブレット
+$sp: 700px;  // スマホ
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

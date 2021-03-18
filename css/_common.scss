@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+// font-family: 'Noto Sans JP', sans-serif;
+
+$cBlack : #333333;
+$cBTN01 : rgb(250,65,204);
+$cBTN02 : linear-gradient(135deg, rgba(250,65,204,1) 0%, rgba(96,32,176,1) 100%);
+$cContact01 : rgb(5,165,250);
+$cContact02 :linear-gradient(135deg, rgba(5,165,250,1) 0%, rgba(99,251,215,1) 100%);
+$cSub : #3BA6C9;
+$cWhite : #fff;
+$cBlue : #0C449B;
+$cContactBG : #EEFBFB;
+$cLine : #DDDDDD;
+$cShadow : rgba(0, 0, 0, 0.1);
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $cBlack;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+button {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+span.nowrap {
+    display: inline-block;
+}
+
+.fade {
+    opacity : 0;
+    transform : translate(0, 45px);
+    transition : all 500ms;
+}
+    
+.fade.effect-scroll {
+    opacity : 1;
+    transform : translate(0, 0);
+}
