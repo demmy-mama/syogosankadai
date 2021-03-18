@@ -35,6 +35,11 @@
             top: -20%;
         }
 
+        @include pc {
+            width: 40%;
+            top: -20%;
+        }
+
         img {
             width: 100%;
         }
@@ -56,6 +61,11 @@
             right: 5%;
         }
 
+        @include pc {
+            width: 25%;
+            right: 18%;
+        }
+
         img {
             width: 100%;
         }
@@ -70,6 +80,10 @@
         @include tab {
             top: 25%;
             left: 5%;
+        }
+
+        @include pc {
+            left: 20%;
         }
 
 
